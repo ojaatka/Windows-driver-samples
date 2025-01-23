@@ -64,7 +64,7 @@ md %1wiabins\drivers
 if /I "%BUILD_DEFAULT_TARGETS%" EQU "/arm" (
 goto wia20 )
 
-
+REM 
 rem
 rem WIA 1.0
 rem
