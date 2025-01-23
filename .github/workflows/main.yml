@@ -1,4 +1,4 @@
-name: Build driver solution
+name: Build WIA on demand
 on:
   # Allow manual scheduling
     workflow_dispatch:
