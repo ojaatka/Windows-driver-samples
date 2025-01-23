@@ -1,6 +1,23 @@
-name: Build WIA driver solution
-      
-# Allow manual scheduling
+name: "Build WIA"
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+    paths-ignore:
+      - '**.md'
+      - 'LICENSE'
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches:
+      - main
+      - develop
+    paths-ignore:
+      - '**.md'
+      - 'LICENSE'
+    
+  # Allow manual scheduling
   workflow_dispatch:
 jobs:
   build:
