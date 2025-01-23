@@ -1,8 +1,7 @@
-name: Build driver solution
-on:
-  push:
-    branches:
-      - main
+name: Build WIA driver solution
+      
+# Allow manual scheduling
+  workflow_dispatch:
 jobs:
   build:
     strategy:
