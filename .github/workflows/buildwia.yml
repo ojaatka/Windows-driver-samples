@@ -26,7 +26,7 @@ jobs:
         run: nuget restore .\packages.config -PackagesDirectory .\packages\
 
       - name: Retrieve and build all available solutions
-        run: .\Build-Sample.ps1 -Verbose -Directory .\wia
+        run: .\Build-Sample.ps1 -Verbose -Samples 'wia' -Configurations 'Release' -Platforms 'x64'
         env:
           WDS_Configuration: ${{ matrix.configuration }}
           WDS_Platform: ${{ matrix.platform }}
